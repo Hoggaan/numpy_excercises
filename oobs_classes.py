@@ -12,5 +12,5 @@ p.company = "Hayaan"
 p.employees = [2]
 
 
-print(p.company, p.employees)
-print(p1.company, p1.employees)
+# print(p.company, p.employees)
+# print(p1.company, p1.employees)

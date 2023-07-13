@@ -37,7 +37,46 @@ arr[0] = 10
 
 arr = np.arange(16).reshape(4,4)  
 
-print(np.split(arr, 4))
+# print(np.split(arr, 4))
  
+ 
+import numpy as np
+
+X = np.arange(12).reshape((3, 4))
+row = np.array([0, 1, 2])
+mask = np.array([1, 0, 1, 0], dtype=bool)
+# print(X[row[:, np.newaxis], mask].shape)
+
+arr1 = np.arange(4)
+arr2 = np.arange(3).reshape(3,1)
+
+arr2 = np.zeros(3, int).reshape(3,1)
+# print(arr2)
+# print(X[arr2, mask])
+# print(X)
 
 
+# arr = np.arange(3)
+# print(arr)
+# arr1 = arr[:, np.newaxis]
+# print(arr1.shape)
+# arr2 = arr[np.newaxis,:]
+# print(arr2)
+
+import numpy as np
+arr= np.array([[2,3,4,5],[1,7,3,5],[2,8,6,9],[11,23,12,19]])
+
+arr1 = 2
+def func(x, y):
+    return x * y
+vec = np.vectorize(func)
+# print(vec(arr, arr1))
+
+
+arr = np.arange(9).reshape(3,3,1)
+# print(arr.shape)
+arr = np.squeeze(arr,2)
+# print(arr.shape)
+
+arr = np.arange(10)
+print(np.split(arr, 5))

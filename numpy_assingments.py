@@ -78,5 +78,29 @@ arr = np.arange(9).reshape(3,3,1)
 arr = np.squeeze(arr,2)
 # print(arr.shape)
 
-arr = np.arange(10)
-print(np.split(arr, 5))
+import numpy as np
+arr = np.array([[1,2,3],
+               [4,5,6],
+               [7,8,9]])
+
+# ar = np.hstack((arr,arr[:, 0])) 
+# print(ar)
+
+
+arr = np.arange(16).reshape(2,2,4)
+# print(arr[0,0:,1].shape)
+
+j = 2
+arr = np.array([[5,3,9],[2, 1, 4], [7,6,8]])
+arr = arr[arr[:, 1].argsort()]
+# print(arr)
+
+# print(np.random.normal())
+
+A = np.arange(960).reshape(10,3,32)
+B = np.arange(30).reshape(10,3, 1)
+X = A + B
+print(X.shape)
+
+x = (2,2)
+print(x[0])
